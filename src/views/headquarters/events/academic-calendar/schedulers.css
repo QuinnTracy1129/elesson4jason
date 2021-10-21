@@ -1,0 +1,7 @@
+.rotateDeg{
+    transition: 1s;
+}
+
+.rotateDeg:hover{
+    transform: rotate(45deg);
+}

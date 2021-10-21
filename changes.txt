@@ -1,0 +1,25 @@
+changed the color for roles
+principal: danger
+head: default
+master: success
+faculty: info
+
+ARCHIVING STILL IN PROGRESS
+archiving: added download all files in superadmin account
+added a button on the sidebar
+
+auditing documents, for last touch, meron po tayong records non, pero useless na ilitaw kase kung ang file, for example ang status nya ay Approved, matic po last touch non si master, kase sya lang ang pwede mag approve, and naka list naman don yung credentials and date kung anong araw sya nag approve, same po sa iba pang roles
+then sa delete, si faculty lang po ang pwede mag delete, kung sino lang ang nag post ng file. pero kapag dinelete nya po yon, hindi po sya actually deleted, naka hide lang po sya sa showing, pero nasa database padin natin sya, at nandun padin sa folder natin, saved for backups, si developer lang po ang nakaka alam at nakaka access non at ng database
+
+added web tracker for super admin
+shows list of logins
+and graph of daily logins
+
+added document tracker for super admin
+shows graph of late, early and ontime
+
+added document tracker for downloads for super admin
+shows graph of pdf's download count
+
+add something new
+added true or false in interactive module 

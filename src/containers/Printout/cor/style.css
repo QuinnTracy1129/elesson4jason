@@ -1,0 +1,100 @@
+.text-name {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+}
+
+.text-data {
+    font-size: 13pt;
+    color: #800000;
+    font-family: Trebuchet MS;
+    font-weight: bold;
+}
+
+.table-title {
+    font-size: 13pt;
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.table-1-name {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.table-1-data {
+    font-size: 12pt;
+    color: #000000;
+    font-family: Swis721 Cn BT;
+    font-weight: bold;
+}
+
+.normal-text {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.table-1-year {
+    font-size: 13pt;
+    color: #000000;
+    font-family: Arial Black;
+    font-weight: bold;
+}
+
+.table-2-data {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.table-2-special {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Arial Narrow;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.table-2-info {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.table-3-info {
+    margin-left: 1%;
+    font-size: 10pt;
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.table-3-p {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.table-3-right-title {
+    font-size: 15pt;
+    color: #000000;
+    font-family: Courier New;
+    font-weight: bold;
+}
+
+.table-3-right-data {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Courier New;
+    font-weight: normal;
+}

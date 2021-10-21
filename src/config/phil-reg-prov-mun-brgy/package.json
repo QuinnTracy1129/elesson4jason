@@ -1,0 +1,74 @@
+{
+  "_from": "phil-reg-prov-mun-brgy",
+  "_id": "phil-reg-prov-mun-brgy@1.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-lD47cbyIKyLX30+V8yTgzhQoIWtpvEwlWzgjbMqPBJgTRVZYVj+Kc9B0KJjG8z1VvXEaJSBVlS5uonoNR+bb6Q==",
+  "_location": "/phil-reg-prov-mun-brgy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "phil-reg-prov-mun-brgy",
+    "name": "phil-reg-prov-mun-brgy",
+    "escapedName": "phil-reg-prov-mun-brgy",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/phil-reg-prov-mun-brgy/-/phil-reg-prov-mun-brgy-1.1.0.tgz",
+  "_shasum": "23318fb699c6935fdc4c5d14f80cbbe611980e59",
+  "_spec": "phil-reg-prov-mun-brgy",
+  "_where": "C:\\xampp1\\htdocs\\SIMSv2-DepEd old\\frontend",
+  "author": {
+    "name": "Ernest Jay Cubillas",
+    "email": "email@ejcubillas.com",
+    "url": "http://ejcubillas.com"
+  },
+  "bugs": {
+    "url": "https://github.com/ejcubillas/philippines-reg-prov-mun-brgy/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "A Javascript library to get the regions, provinces, cities, municipalities and barangays in the Philippines",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.35.0",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "homepage": "https://github.com/ejcubillas/philippines-reg-prov-mun-brgy#readme",
+  "keywords": [
+    "Philippines",
+    "Philippines Provinces",
+    "Philippines Regions",
+    "Philippines Cities",
+    "Philippines Municipalities",
+    "Philippines Barangays",
+    "npm",
+    "npm-philippines",
+    "Javascript",
+    "node",
+    "js"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "phil-reg-prov-mun-brgy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejcubillas/philippines-reg-prov-mun-brgy.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.0"
+}

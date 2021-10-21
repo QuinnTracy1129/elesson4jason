@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Platform Title";
+  src: url("./../../../config/fonts/HELVETICA.TTF");
+  src: url("./../../../config/fonts/HELVETICA.TTF") format("TTF");
+}
+
+.platform-title {
+  font-family: Platform Title;
+}
+
+.platform-container {
+  max-height: 85vh;
+  overflow: auto;
+}
+
+.platform-body {
+  font-size: 1.5rem;
+  text-align: justify;
+  text-justify: auto;
+}

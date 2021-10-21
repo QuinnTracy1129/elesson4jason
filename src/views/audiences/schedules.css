@@ -1,0 +1,10 @@
+.row-style{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.table-zero{
+    position: relative;
+    height: 100%;
+}

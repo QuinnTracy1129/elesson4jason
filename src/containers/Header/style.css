@@ -1,0 +1,21 @@
+.default-name {
+    font-size: 10pt;
+    color: #000000;
+    font-family: Arial;
+    font-weight: normal;
+}
+
+.school-name {
+    font-size: 20pt;
+    color: #000000;
+    font-family: Old English Text MT;
+    font-weight: normal;
+}
+
+.form-title {
+    font-size: 14pt;
+    color: #000000;
+    font-family: Arial Black;
+    font-weight: bold;
+    text-transform: uppercase;
+}

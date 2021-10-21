@@ -1,0 +1,9 @@
+export const BROWSE = "BROWSE";
+export const READ = "FIND";
+export const EDIT = "UPDATE";
+export const ADD = "CREATE";
+export const DESTROY = "DESTROY";
+export const KEY = "SEARCH_KEY";
+export const CLEAR = "CLEAR_KEY";
+export const LIST = "LIST_MODELS";
+export const LOOK = "LOOK";

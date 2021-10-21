@@ -1,0 +1,69 @@
+.editable-text {
+  background-color: transparent;
+  border: 0px solid;
+}
+
+.text-indent {
+  text-indent: 25px;
+}
+
+.school-name {
+  width: 100%;
+  height: 55px;
+  font-size: 50px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.school-tagline {
+  width: 100%;
+  height: 30px;
+  font-size: 25px;
+  margin-bottom: 2.5px;
+  font-weight: 350;
+}
+
+.school-others {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  font-weight: 350;
+}
+
+.school-mission {
+  width: 100%;
+  height: 250px;
+  font-size: 16px;
+  text-indent: 15px;
+}
+
+.hoverImage {
+  position: relative;
+  max-height: 150px;
+}
+
+.imageHover {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middleButton {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.hoverImage:hover .imageHover {
+  opacity: 0.3;
+}
+
+.hoverImage:hover .middleButton {
+  opacity: 1;
+}
