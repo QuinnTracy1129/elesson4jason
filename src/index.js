@@ -5,8 +5,8 @@ import registerServiceWorker from "./registerServiceWorker";
 
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:8000/";
-// axios.defaults.baseURL = "https://jasonelesson.herokuapp.com/";
+// axios.defaults.baseURL = "http://localhost:8000/";
+axios.defaults.baseURL = "https://jasonelesson.herokuapp.com/";
 axios.defaults.withCredentials = true;
 let token = localStorage.getItem("token");
 if (token) {
