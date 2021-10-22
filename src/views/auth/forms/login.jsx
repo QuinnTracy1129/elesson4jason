@@ -154,14 +154,10 @@ class Login extends React.Component {
         }
       })
       .catch((err) => {
-        if (err.response && err.response.data.message.slice(0, 4) === "CSRF") {
-          window.location.reload();
-        } else {
-          this.setState({
-            message: err.response ? err.response.data.message : null,
-            has_msg: true,
-          });
-        }
+        this.setState({
+          message: err.response ? err.response.data.message : null,
+          has_msg: true,
+        });
       });
   };
 
