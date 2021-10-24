@@ -24,7 +24,7 @@ import { rtl } from "../../config/withDirection";
 import appActions from "../../redux/app/actions";
 import SidebarWrapper from "./sidebar.style";
 import Swal from "sweetalert2";
-import axios from "axios";
+// import axios from "axios";
 
 const SubMenu = Menu.SubMenu;
 const platform = "Headquarters";
