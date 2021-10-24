@@ -159,7 +159,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 
 
 
-function getImageSize(node, options = {}) {
+function getImageSize(node, options) {
     const width = options.width || Object(__WEBPACK_IMPORTED_MODULE_4__util__["e" /* getNodeWidth */])(node);
     const height = options.height || Object(__WEBPACK_IMPORTED_MODULE_4__util__["d" /* getNodeHeight */])(node);
     return { width, height };
