@@ -101,9 +101,7 @@ const Card = ({ model, facultyRef, visible, onClose, updateOrCreate }) => {
               defaultValue={"Please select faculty"}
               value={department.head_id}
               name="head_id"
-              onChange={(val) =>
-                setDepartment({ ...department, ["head_id"]: val })
-              }
+              onChange={(val) => setDepartment({ ...department, head_id: val })}
             >
               {facultyRef}
             </Select>

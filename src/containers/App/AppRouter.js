@@ -29,22 +29,6 @@ class AppRouter extends React.Component {
         />
         {/* End of Inventory */}
         {/* -------------------------------------------------------------------------------- */}
-        {/* Debugging pages */}
-        <Route
-          exact
-          path={`${url}/web/tracker`}
-          component={asyncComponent(() =>
-            import("../../views/auth/webTracking")
-          )}
-        />
-        <Route
-          exact
-          path={`${url}/document/tracker`}
-          component={asyncComponent(() =>
-            import("../../views/auth/documentTracking")
-          )}
-        />
-        {/* End of Debugging pages */}
         {/* Headquarters */}
         {/* Headquarter -> Settings */}
         <Route
