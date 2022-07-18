@@ -63,7 +63,7 @@ class Interactive extends Component {
       title: "Please provide the Learning Competency Code",
       input: "text",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to write something!";
         }
@@ -86,7 +86,7 @@ class Interactive extends Component {
       title: "Enter Title",
       input: "text",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to write something!";
         }
@@ -105,7 +105,7 @@ class Interactive extends Component {
       title: "Enter Message",
       input: "text",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to write something!";
         }
@@ -125,7 +125,7 @@ class Interactive extends Component {
       title: "Enter sentence",
       input: "text",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to write something!";
         }
@@ -138,7 +138,7 @@ class Interactive extends Component {
         title: "Enter choice a",
         input: "text",
         showCancelButton: true,
-        inputValidator: (value) => {
+        inputValidator: value => {
           if (!value) {
             return "You need to write something!";
           }
@@ -152,7 +152,7 @@ class Interactive extends Component {
           title: "Enter choice b",
           input: "text",
           showCancelButton: true,
-          inputValidator: (value) => {
+          inputValidator: value => {
             if (!value) {
               return "You need to write something!";
             }
@@ -166,7 +166,7 @@ class Interactive extends Component {
             title: "Enter choice c",
             input: "text",
             showCancelButton: true,
-            inputValidator: (value) => {
+            inputValidator: value => {
               if (!value) {
                 return "You need to write something!";
               }
@@ -180,7 +180,7 @@ class Interactive extends Component {
               title: "Enter choice d",
               input: "text",
               showCancelButton: true,
-              inputValidator: (value) => {
+              inputValidator: value => {
                 if (!value) {
                   return "You need to write something!";
                 }
@@ -206,7 +206,7 @@ class Interactive extends Component {
       title: "Enter sentence",
       input: "text",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to write something!";
         }
@@ -226,7 +226,7 @@ class Interactive extends Component {
       title: "Enter Header",
       input: "text",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to write something!";
         }
@@ -246,7 +246,7 @@ class Interactive extends Component {
       title: "Enter Paragraph",
       input: "textarea",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to write something!";
         }
@@ -266,7 +266,7 @@ class Interactive extends Component {
       title: "Add an Image",
       input: "file",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to upload something!";
         }
@@ -306,7 +306,7 @@ class Interactive extends Component {
       title: "What word should be interactive?",
       input: "text",
       showCancelButton: true,
-      inputValidator: (value) => {
+      inputValidator: value => {
         if (!value) {
           return "You need to write something!";
         }
@@ -328,7 +328,7 @@ class Interactive extends Component {
             confirmButtonText: `Image`,
             denyButtonText: `Paragraph`,
           })
-          .then(async (result) => {
+          .then(async result => {
             if (result.isConfirmed) {
               const { value: file } = await swal.fire({
                 title: "Select image",
@@ -343,7 +343,7 @@ class Interactive extends Component {
                 console.log(file);
                 const reader = new FileReader();
                 reader.readAsDataURL(file);
-                reader.onload = async (e) => {
+                reader.onload = async e => {
                   let iForm = {
                     file_base64: e.target.result,
                     name: file.name,
@@ -374,7 +374,7 @@ class Interactive extends Component {
     }
   };
 
-  handleRemove = (index) => {
+  handleRemove = index => {
     let { form } = this.state;
     form.url.splice(index, 1);
     this.setState({ form });
@@ -388,7 +388,7 @@ class Interactive extends Component {
           input: "text",
           inputValue: data.value,
           showCancelButton: true,
-          inputValidator: (value) => {
+          inputValidator: value => {
             if (!value) {
               return "You need to write something!";
             }
@@ -411,7 +411,7 @@ class Interactive extends Component {
           imageHeight: 200,
           imageAlt: "Custom image",
           showCancelButton: true,
-          inputValidator: (value) => {
+          inputValidator: value => {
             if (!value) {
               return "You need to upload something!";
             }
@@ -449,7 +449,7 @@ class Interactive extends Component {
           input: "textarea",
           inputValue: data.value,
           showCancelButton: true,
-          inputValidator: (value) => {
+          inputValidator: value => {
             if (!value) {
               return "You need to write something!";
             }
@@ -469,7 +469,7 @@ class Interactive extends Component {
           input: "text",
           inputValue: data.value,
           showCancelButton: true,
-          inputValidator: (value) => {
+          inputValidator: value => {
             if (!value) {
               return "You need to write something!";
             }
@@ -489,7 +489,7 @@ class Interactive extends Component {
           input: "text",
           inputValue: data.value,
           showCancelButton: true,
-          inputValidator: (value) => {
+          inputValidator: value => {
             if (!value) {
               return "You need to write something!";
             }
@@ -509,7 +509,7 @@ class Interactive extends Component {
           input: "text",
           inputValue: data.value,
           showCancelButton: true,
-          inputValidator: (value) => {
+          inputValidator: value => {
             if (!value) {
               return "You need to write something!";
             }
@@ -522,7 +522,7 @@ class Interactive extends Component {
             title: "Edit choice a",
             input: "text",
             showCancelButton: true,
-            inputValidator: (value) => {
+            inputValidator: value => {
               if (!value) {
                 return "You need to write something!";
               }
@@ -536,7 +536,7 @@ class Interactive extends Component {
               title: "Edit choice b",
               input: "text",
               showCancelButton: true,
-              inputValidator: (value) => {
+              inputValidator: value => {
                 if (!value) {
                   return "You need to write something!";
                 }
@@ -550,7 +550,7 @@ class Interactive extends Component {
                 title: "Edit choice c",
                 input: "text",
                 showCancelButton: true,
-                inputValidator: (value) => {
+                inputValidator: value => {
                   if (!value) {
                     return "You need to write something!";
                   }
@@ -564,7 +564,7 @@ class Interactive extends Component {
                   title: "Edit choice d",
                   input: "text",
                   showCancelButton: true,
-                  inputValidator: (value) => {
+                  inputValidator: value => {
                     if (!value) {
                       return "You need to write something!";
                     }
@@ -685,10 +685,10 @@ class Interactive extends Component {
                 src={`${axios.defaults.baseURL}storage/${data.value}`}
                 width="auto"
                 height="200"
-                onMouseOver={(e) => {
+                onMouseOver={e => {
                   e.target.height = "500";
                 }}
-                onMouseOut={(e) => {
+                onMouseOut={e => {
                   e.target.height = "200";
                 }}
                 alt="module-sample"
@@ -821,7 +821,7 @@ class Interactive extends Component {
             <input
               value={this.state.form.title}
               className="border-0 bg-transparent w-75 outline-0"
-              onChange={(e) => {
+              onChange={e => {
                 let { form } = this.state;
                 form.title = e.target.value;
                 this.setState({ form });

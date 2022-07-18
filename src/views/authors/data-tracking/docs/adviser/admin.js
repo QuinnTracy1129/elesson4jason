@@ -22,7 +22,7 @@ import Card from "./card";
 import axios from "axios";
 import Attachment from "./attachment";
 import moment from "moment";
-const getBadge = (status) => {
+const getBadge = status => {
   switch (status) {
     case "pending":
       return "bg-warning text-dark rounded";
@@ -59,7 +59,7 @@ export default class extends Component {
   componentDidMount() {
     console.log(moment().format("MM/d/Y"));
     this.onSearch();
-    this.key.addEventListener("keydown", (e) => {
+    this.key.addEventListener("keydown", e => {
       if (e.key === "Enter") {
         this.onSearch();
         this.key.value = "";
@@ -74,11 +74,11 @@ export default class extends Component {
       department: this.auth.department_id,
       batch: this.auth.batch_id,
       status: "submited",
-    }).then((data) => {
+    }).then(data => {
       this.setState({ models: [...data] }, () => console.log("starts here"));
     });
   };
-  onExhibit = (i) => {
+  onExhibit = i => {
     let model = this.state.models[i];
     this.setState({
       model: model,
@@ -100,7 +100,7 @@ export default class extends Component {
     if (this.state.model.file) {
       this.fileUploadHandler(this.state.model.file, this.state.model.title);
     }
-    itala(this.state.entity, this.state.model).then((data) => {
+    itala(this.state.entity, this.state.model).then(data => {
       let { models } = this.state;
       models.push(data);
       this.setState({ models: models });
@@ -112,7 +112,7 @@ export default class extends Component {
       this.state.entity,
       model.id || this.state.model.id,
       model || this.state.model
-    ).then((data) => {
+    ).then(data => {
       let { models } = this.state;
       models[model ? i : this.state.activeIndex] = data;
       this.setState({ models: models });
@@ -137,13 +137,13 @@ export default class extends Component {
   closeModal = () => {
     this.switchExhibitStatus();
   };
-  handleSubmit = (model) => {
+  handleSubmit = model => {
     this.setState({ model });
     this.state.newModel ? this.onSave() : this.onUpdate();
     this.switchExhibitStatus();
   };
 
-  onAttchment = (attachment) => {
+  onAttchment = attachment => {
     this.setState({
       file_name: attachment,
       exhibitAttachment: !this.state.exhibitAttachment,
@@ -153,7 +153,7 @@ export default class extends Component {
   onClose = () => {
     this.setState({ exhibitAttachment: !this.state.exhibitAttachment });
   };
-  onSubmitted = (i) => {
+  onSubmitted = i => {
     let model = this.state.models[i];
     model.status = "submitted";
     model.submitted_at = moment().format("MM/d/Y");
